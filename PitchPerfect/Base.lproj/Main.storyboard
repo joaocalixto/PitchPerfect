@@ -21,12 +21,31 @@
                                 <rect key="frame" x="276" y="285" width="49" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yi8-US-sM2"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00F-8Y-Zjw">
+                                <rect key="frame" x="247" y="368" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-lr-rjM">
+                                <rect key="frame" x="247" y="332" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cMs-lr-rjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1c0-gO-0jM"/>
                             <constraint firstItem="yNz-U2-c1C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTx-R8-R82"/>
                             <constraint firstItem="yNz-U2-c1C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S5a-Yp-Wrx"/>
+                            <constraint firstItem="cMs-lr-rjM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42.5" id="gSP-bm-7sB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="00F-8Y-Zjw" secondAttribute="bottom" constant="202" id="jqT-5R-mTt"/>
+                            <constraint firstItem="cMs-lr-rjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mFb-KR-HF6"/>
+                            <constraint firstItem="00F-8Y-Zjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v6m-v1-rlU"/>
+                            <constraint firstItem="00F-8Y-Zjw" firstAttribute="top" secondItem="cMs-lr-rjM" secondAttribute="bottom" constant="15" id="w3Z-q0-aES"/>
                         </constraints>
                     </view>
                 </viewController>
